@@ -1,0 +1,133 @@
+html,
+body
+{
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* hide horizontal scrollbars, since we use the vertical ones to scroll to the right */
+body
+{
+  overflow-x: hidden;
+  background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAUElEQVQoU2P8//+/DwMhsHChFCNBhQsXSjHExz/Dq5CRkXELzCCcCpEVgVyGVSG6IqwKsSnCUIhLEYpCfIoQCqFBgC84Gf8vWJAGCidCYQ4AdElBQetZPFYAAAAASUVORK5CYII=
+    ) repeat;
+
+}
+
+h1
+{
+  font-size: 20px;
+  font-weight: normal;
+  color: #2e6e80;
+}
+
+/**
+  * important: keep position fixed, you can however use top:0 instead of bottom:0
+  * if you want to make it stick to the top of the browser
+  */
+.scroll
+{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+/**
+  * z-index ordering of the different layers, do this for your layers,
+  * also assign absolute width (to prevent issues if the script gets executed before the images get loaded)
+  */
+.horizon
+{
+  z-index: 1;
+  width: 3000px;
+}
+
+.middle
+{
+  z-index: 500;
+  width: 5600px;
+}
+
+.front
+{
+  z-index: 1000;
+  width: 6000px;
+}
+.article {
+position: fixed;
+top: 0;	
+width: 720px;
+padding: 2em;
+background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(white, red); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(white, red); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(white, red); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(white, red); /* Standard syntax */
+-webkit-box-shadow: 1px 3px 15px 3px rgba(36,36,36,0.4);
+-moz-box-shadow: 1px 3px 15px 3px rgba(36,36,36,0.4);
+box-shadow: 1px 3px 15px 3px rgba(36,36,36,0.4);
+margin-top:170px;
+margin-left:550px;
+border-radius: 22px 0px 22px 0px;
+-moz-border-radius: 22px 0px 22px 0px;
+-webkit-border-radius: 22px 0px 22px 0px;
+border: 1px solid #ffffff;
+	 	
+}
+.article img {
+margin: 0 auto;
+text-align:center;
+display:block;
+border-radius: 22px 0px 22px 0px;
+-moz-border-radius: 22px 0px 22px 0px;
+-webkit-border-radius: 22px 0px 22px 0px;
+border: 1px solid #ffffff;
+	
+}
+.article h1 {
+	color: white;
+	font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+	font-size:28px;
+	text-decoration:underline;
+	margin-top:16px;
+	padding-left:19px;
+	padding-right:19px;
+	}
+	
+.article p {
+		color: white;
+		font-size:1.1em;
+		font-family:Verdana, Geneva, sans-serif;
+			padding-left:19px;
+	padding-right:19px;
+		
+	}
+	
+.arrow {
+	position: fixed;
+top: 0;
+	margin-top:380px;
+margin-left:1450px;
+width:220px;
+height: 150px;
+}
+
+.secondArticle{
+	margin-left:1800px;
+}
+.secondArrow{
+	margin-left:2700px;
+}
+
+.thirdArticle{
+	margin-left:3050px;
+}
+.thirdArrow{
+	margin-left:3950px;
+}
+
+.fourthArticle{
+margin-left: 4300px;
+	
+}
